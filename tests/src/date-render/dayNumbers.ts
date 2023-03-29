@@ -14,4 +14,5 @@ describe('dayNumbers', () => {
     let dayGridViewWrapper = new DayGridViewWrapper(calendar).dayGrid
     expect(dayGridViewWrapper.getDayNumberText('2018-01-01')).toMatch(/1|١٤?/) // normal 1, or an Arabic 1
   })
-})
+})  
+
