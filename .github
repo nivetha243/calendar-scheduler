@@ -1,1 +1,22 @@
+@@ -1,8 +1,13 @@
 
+#
+# NOTE: keep this synced with standard repo's config
+#
+
+name: CI	name: CI
+on:	on:
+  push:	  push:
+    branches:	    branches:
+      - main-nevermind	      - dev
+  pull_request:	  pull_request:
+    branches:	    branches:
+      - main	      - main
+@@ -45,5 +50,6 @@ jobs:
+      - name: Build	      - name: Build
+        run: pnpm run build	        run: pnpm run build
+
+
+      - name: Test	      # TODO: solve flaky tests
+        run: pnpm run test	      # - name: Test
+      #   run: pnpm run test
